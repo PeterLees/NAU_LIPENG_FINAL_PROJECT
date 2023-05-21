@@ -1,8 +1,10 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -11,15 +13,78 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NAU icon" translatesAutoresizingMaskIntoConstraints="NO" id="eHx-yU-2wF">
+                                <rect key="frame" x="87" y="128" width="240" height="162"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Hgb-zy-zY9"/>
+                                    <constraint firstAttribute="height" constant="162" id="ZgT-3z-bmw"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="学生姓名： 李朋" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="27y-CU-b1h">
+                                <rect key="frame" x="144" y="452" width="126" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="V8K-yZ-8Ha"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="研究方向： 信息安全" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YuP-t9-lSt">
+                                <rect key="frame" x="127" y="370" width="160.5" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="yyP-JZ-CC9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="项目名称： iOS抓包App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cfd-ZK-Nxq">
+                                <rect key="frame" x="115.5" y="411" width="183.5" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="bgh-Ll-Fc5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="指导老师姓名： Dewei Meng" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n5x-jF-aHK">
+                                <rect key="frame" x="97" y="493" width="220" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="1H3-74-tPd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="n5x-jF-aHK" firstAttribute="top" secondItem="27y-CU-b1h" secondAttribute="bottom" constant="20" id="BRn-Bs-Lqy"/>
+                            <constraint firstItem="cfd-ZK-Nxq" firstAttribute="top" secondItem="YuP-t9-lSt" secondAttribute="bottom" constant="20" id="CU5-XW-hLm"/>
+                            <constraint firstItem="YuP-t9-lSt" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="T9y-Ah-dLJ"/>
+                            <constraint firstItem="eHx-yU-2wF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="84" id="bha-TI-2g0"/>
+                            <constraint firstItem="cfd-ZK-Nxq" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="d1d-Go-6Ic"/>
+                            <constraint firstItem="eHx-yU-2wF" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="e9O-Kn-4nB"/>
+                            <constraint firstItem="n5x-jF-aHK" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="iPl-Yb-6cQ"/>
+                            <constraint firstItem="27y-CU-b1h" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="t6H-XD-cHM"/>
+                            <constraint firstItem="27y-CU-b1h" firstAttribute="top" secondItem="cfd-ZK-Nxq" secondAttribute="bottom" constant="20" id="twJ-ui-Y5b"/>
+                            <constraint firstItem="YuP-t9-lSt" firstAttribute="top" secondItem="eHx-yU-2wF" secondAttribute="bottom" constant="80" id="uVK-l8-8ba"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="NAU icon" width="112.5" height="112.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
