@@ -1,4 +1,7 @@
 # NAU_LIPENG_FINAL_PROJECT
 this is my final project of CIT 692 on NAU
 防止抓包功能演示如下：
+
 ![687474703a2f2f7777772e7a786c65652e636e2f5a5852657175657374426c6f636b44656d6f312e676966](https://github.com/PeterLees/NAU_LIPENG_FINAL_PROJECT/assets/3017040/b8a33902-e979-4a0e-9b2d-d115201c80bd)
+
+App内抓包功能如下：
